@@ -11,7 +11,7 @@ Depending on the features your office enables and you use, the app handles:
 
 - **Account and work-profile data:** username, internal user identifier, display name, role, office, branch, account status and two-factor status.
 - **Device and security data:** a persistent random device identifier (sent to the server as a hash), device model/platform label, trusted-device status, sign-in/security events, push token and notification preferences.
-- **Office and customer data:** balances, cash boxes, treasury records, transfers, movements, commissions, customer names, phone numbers, identity type/number, account statements, notes, operator and timestamps.
+- **Office and customer data:** balances, cash boxes, treasury records, transfers, movements, commissions, customer names, phone numbers, email addresses, physical addresses, identity type/number, account statements, notes, operator and timestamps.
 - **Card-service bookkeeping records:** operation type, amount, currency, commission, cash box, card/recipient-card numbers, receipt and transaction references, customer name, notes, dates and operator. These are office accounting records; the app does not charge a card or process a payment-network transaction.
 - **Internal company chat:** messages, mentions, images, image thumbnails and voice notes sent by staff. Chat is private to authorized staff of the same office and is not a public social network.
 - **User-selected receipt images:** when a permitted user chooses “photograph receipt” or selects an image while preparing a card-operation record, the image is compressed and uploaded for automated reading. Google Gemini processes it to propose fields such as amount, currency, card number, receipt/transaction reference, customer and date. The user reviews the result. The image is not stored in the saved card-operation record; fields the user saves become part of that record.
@@ -72,7 +72,7 @@ The service uses server-enforced role, office and branch controls, trusted-devic
 
 - **بيانات الحساب والوظيفة:** اسم المستخدم، معرّف المستخدم الداخلي، الاسم الظاهر، الدور، المكتب، الفرع، حالة الحساب وحالة التحقق الثنائي.
 - **بيانات الجهاز والأمان:** معرّف جهاز عشوائي ثابت (يُرسل للخادم كبصمة مشفّرة)، اسم طراز/منصة الجهاز، حالة اعتماد الجهاز، أحداث الدخول والأمان، رمز دفع الإشعارات وتفضيلاتها.
-- **بيانات المكتب والعملاء:** الأرصدة والصناديق والخزنة والحوالات والحركات والعمولات، وأسماء العملاء وهواتفهم ونوع/رقم الهوية وكشوف الحساب والملاحظات والمنفذ والتوقيتات.
+- **بيانات المكتب والعملاء:** الأرصدة والصناديق والخزنة والحوالات والحركات والعمولات، وأسماء العملاء وهواتفهم وعناوين بريدهم الإلكتروني وعناوينهم الفعلية ونوع/رقم الهوية وكشوف الحساب والملاحظات والمنفذ والتوقيتات.
 - **سجلات خدمات البطاقات المحاسبية:** نوع العملية والمبلغ والعملة والعمولة والصندوق وأرقام بطاقة العملية/المستلم ومراجع الوصل والمعاملة واسم العميل والملاحظات والتواريخ والمنفذ. هذه قيود محاسبية للمكتب؛ لا يشحن التطبيق بطاقة ولا ينفّذ معاملة على شبكة دفع.
 - **محادثات الشركة الداخلية:** الرسائل والإشارات والصور ومصغراتها والرسائل الصوتية التي يرسلها الموظفون. المحادثة خاصة بموظفي المكتب المخوّلين وليست شبكة اجتماعية عامة.
 - **صور الوصولات التي يختارها المستخدم:** عندما يختار المستخدم المخوّل «تصوير الوصل» أو صورة من المعرض أثناء إعداد سجل عملية بطاقة، تُضغط الصورة وتُرفع للقراءة الآلية. تعالج Google Gemini الصورة لاقتراح حقول مثل المبلغ والعملة ورقم البطاقة ومرجع الوصل/المعاملة والعميل والتاريخ، ثم يراجع المستخدم النتيجة. لا تُحفظ الصورة في سجل عملية البطاقة المحفوظ، أما الحقول التي يحفظها المستخدم فتصبح جزءاً من السجل.
